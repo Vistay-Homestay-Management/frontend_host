@@ -1,5 +1,11 @@
 # ViStay Host Web
 
-React web application for ViStay hosts.
+Host portal for property, contract, booking, payout, and operations
+visibility. Business reads use the federated GraphQL endpoint through
+Gateway.
 
-This repository is part of the ViStay Homestay Management platform. Epic 1 establishes a buildable, testable application shell and platform integrations; domain workflows are delivered by their owning epics.
+```powershell
+Copy-Item .env.example .env.local
+npm install
+npm run dev
+```
