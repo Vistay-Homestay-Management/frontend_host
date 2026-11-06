@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ArrowUpRight, Bell, Buildings, CalendarDots, ChartLineUp, ChatCircleDots, HouseLine, ListChecks, Wallet } from '@phosphor-icons/react'
 import './App.css'
+import { DynamicPropertyAttributes } from './DynamicPropertyAttributes'
 
 const homes = [
   { name: 'Sông Hàn Loft', model: 'Quản lý vận hành', occupancy: '87%', image: 'https://picsum.photos/seed/vistay-host-river/900/700' },
@@ -59,6 +60,7 @@ function App() {
             <a href="#">Xem toàn bộ hoạt động <ArrowUpRight /></a>
           </aside>
         </div>
+        <DynamicPropertyAttributes />
       </section>
     </main>
   )
