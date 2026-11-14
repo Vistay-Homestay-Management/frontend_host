@@ -4,6 +4,8 @@ import gsap from 'gsap'
 import { ArrowUpRight, Bell, Buildings, CalendarDots, ChartLineUp, ChatCircleDots, HouseLine, ListChecks, Wallet } from '@phosphor-icons/react'
 import './App.css'
 import { DynamicPropertyAttributes } from './DynamicPropertyAttributes'
+import { ProfileLinking } from './ProfileLinking'
+import { PortalSession } from './PortalSession'
 
 const homes = [
   { name: 'Sông Hàn Loft', model: 'Quản lý vận hành', occupancy: '87%', image: 'https://picsum.photos/seed/vistay-host-river/900/700' },
@@ -31,6 +33,8 @@ function App() {
         <div className="host-profile"><div>NA</div><span><strong>Nguyễn An</strong><small>Chủ nhà</small></span></div>
       </aside>
       <section className="workspace">
+        <PortalSession />
+        <ProfileLinking />
         <header className="rise">
           <div><span>Thứ năm, 22 tháng 10</span><h1>Chào buổi sáng, anh An.</h1></div>
           <div className="header-actions"><button aria-label="Thông báo"><Bell /></button><button className="support"><ChatCircleDots /> Liên hệ quản lý</button></div>
